@@ -3,8 +3,8 @@
 /**
  * main - Entry point
  *
- * Description: Prints the message "Programming is like building a multilingual puzzle
- *              followed by a new line.
+ * Prints the message "Programming is like building a multilingual puzzle
+ *            
  *
  * Return: Always 0 (Success)
  */
