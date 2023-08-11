@@ -4,7 +4,6 @@
  * main - Entry point
  *
  * Prints the message "Programming is like building a multilingual puzzle
- *            
  *
  * Return: Always 0 (Success)
  */
