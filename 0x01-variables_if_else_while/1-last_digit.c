@@ -13,12 +13,12 @@
 int main(void)
 {
     int n;
-    int lastDigit; // Declare the variable here
+    int lastDigit;
 
     srand(time(0));
     n = rand() - RAND_MAX / 2;
 
-    int lastDigit = n % 10;
+    lastDigit = n % 10;
 
     printf("Last digit of %d is %d and is ", n, lastDigit);
 
