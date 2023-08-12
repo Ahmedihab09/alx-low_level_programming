@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * main - Entry point of the program
+ *
+ * This program generates a random number and prints whether
+ * it is positive, zero, or negative.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
     int n;
@@ -9,7 +17,7 @@ int main(void)
     srand(time(0));
     n = rand() - RAND_MAX / 2;
 
-    printf("The number %d is ", n);
+    printf("%d is ", n);
 
     if (n > 0) {
         printf("positive\n");
