@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-/*
+#include <stdio.h>
+
+/**
  * main - Entry point
  *
  * Description: Prints "_putchar" followed by a new line
