@@ -5,28 +5,21 @@
  */
 void times_table(void)
 {
-	int row, col;
+	int row, col, result;
 
 	for (row = 0; row <= 9; row++)
 	{
-		for (col = 0; col <= 9; col++)
+		_putchar('0'); /* Print the first digit */
+		for (col = 1; col <= 9; col++)
 		{
-			int result = row * col;
-			if (col != 0)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-			if (result >= 10)
-			{
-				_putchar('0' + result / 10);
-				_putchar('0' + result % 10);
-			}
+			_putchar(',');
+			_putchar(' ');
+			result = row * col;
+			if (result < 10)
+				_putchar(' '); /* Print a space for single-digit numbers */
 			else
-			{
-				_putchar(' ');
-				_putchar('0' + result);
-			}
+				_putchar('0' + result / 10);
+			_putchar('0' + result % 10);
 		}
 		_putchar('\n');
 	}
