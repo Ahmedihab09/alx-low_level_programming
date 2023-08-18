@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point, prints FizzBuzz numbers.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int i;
