@@ -16,7 +16,7 @@ char *_strcpy(char *dest, char *src)
 		src++;
 	}
 
-	*dest = '\0'; // Copy the null-terminator
+	*dest = '\0';
 
 	return dest_start;
 }
