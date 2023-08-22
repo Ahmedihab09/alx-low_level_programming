@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * puts2 - Prints each character of a string, starting with the first character.
+ * puts2 - Prints each character of string,starting with the first character.
  * @str: The input string.
  */
 void puts2(char *str)
@@ -15,7 +15,7 @@ void puts2(char *str)
 		i++;
 		if (str[i] == '\0')
 			break;
-		
+
 		i++;
 	}
 
