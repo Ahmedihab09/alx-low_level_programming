@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -6,19 +7,24 @@
  */
 void rev_string(char *s)
 {
-	int len;
-	int i;
+	int length = 0;
+
+	while (s[length] != '\0')
+	{
+		length++;
+	}
+
+	int start = 0;
+	int end = length - 1;
 	char temp;
 
-	while (s[len] != '\0')
+	while (start < end)
 	{
-		len++;
+		temp = s[start];
+		s[start] = s[end];
+		s[end] = temp;
+		start++;
+		end--;
 	}
+}
 
-	for (i = 0; i < len / 2; i++)
-	{
-		temp = s[i];
-		s[i] = s[len - 1 - i];
-		s[len - 1 - i] = temp;
-	}
-}	
