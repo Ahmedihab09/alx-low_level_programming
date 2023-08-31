@@ -27,6 +27,7 @@ void _puts_recursion(char *s)
 int main(void)
 {
 	char str[] = "Hello, Recursive World!";
+
 	_puts_recursion(str);
 	return (0);
 }
