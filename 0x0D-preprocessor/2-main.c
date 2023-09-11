@@ -3,7 +3,7 @@
 /**
  * main - Entry point of the program.
  *
- * This program prints the name of the file it was compiled from, followed by a newline.
+ * This program prints the name of the file it was compiled from.
  *
  * Return: 0 on success.
  */
