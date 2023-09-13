@@ -19,7 +19,11 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 		}
 	}
 }
-/* Example function to be used with array_iterator */
+/**
+ * print_element - Prints an integer element.
+ *
+ * @element: The integer to print.
+ */
 void print_element(int element)
 {
 	printf("%d ", element);
