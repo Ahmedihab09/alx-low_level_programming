@@ -17,4 +17,8 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 		}
 	}
 }
-
+/* Example function to be used with array_iterator */
+void print_element(int element)
+{
+    printf("%d ", element);
+}
