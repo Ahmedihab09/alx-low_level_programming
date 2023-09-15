@@ -9,8 +9,8 @@
  * @...: The strings to be printed.
  *
  * Description: This function prints a list of strings separated by
- *              the specified separator string. If the separator is NULL, it is not
- *              printed. If a string is NULL, it prints (nil) instead. A new line is
+ *              the specified separator string. If separator is NULL, it its
+ *              printed. If string is NULL,it prints (nil) instead.new line is
  *              printed at the end.
  */
 void print_strings(const char *separator, const unsigned int n, ...)
