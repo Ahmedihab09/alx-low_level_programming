@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <string.h>
 
 int create_file(const char *filename, char *text_content)
 {
@@ -16,7 +17,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		ssize_t bytes_written; 
+		ssize_t bytes_written;
 			
 		bytes_written = write(fd, text_content, strlen(text_content));
 		if (bytes_written == -1)
