@@ -3,19 +3,18 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
-#include <string.h>
 
 /**
- * create_file - Creates a file with specified permissions
- * and writes text content.
- * @filename: The name of the file to create.
- * @text_content: The NULL-terminated string to write to the file.
+ * append_text_to_file - Appends text to the end of a file.
+ * @filename: The name of the file.
+ * @text_content: The NULL-terminated string to add at the end of the file.
  *
  * Return: 1 on success, -1 on failure.
- * If the file can't be created, written, or any other
- * failure occurs, return -1.
+ * If the file doesn't exist or if you don't have write permissions, return -1.
+ * If filename is NULL, return -1.
+ * If text_content is NULL, return 1.
  */
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
 	ssize_t bytes_written;
@@ -23,7 +22,7 @@ int create_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 
-	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	fd = open(filename, O_WRONLY | O_APPEND);
 	if (fd == -1)
 		return (-1);
 
@@ -40,4 +39,3 @@ int create_file(const char *filename, char *text_content)
 	close(fd);
 	return (1);
 }
-
