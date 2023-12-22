@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "hash_table.h" /* Include your hash table header file */
+#include "hash_tables.h"
 
 /**
  * hash_table_print - Prints a hash table
